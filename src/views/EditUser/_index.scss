@@ -1,0 +1,38 @@
+
+//import '@material/react-text-field/index.scss';
+// @import "@material/textfield/mdc-text-field";
+
+.__EditUser__Grid {
+    &__Row:nth-child(1) {
+        &__Cell {
+            &__Header {
+            }
+        }
+    }
+    &__Row:nth-child(2){
+        padding: 5rem 12rem !important;
+        &__Cell {
+        }
+        .__inputRoot {
+            margin-right: 10rem;
+        }
+    }
+    &__Row{
+        &__Cell{
+            &__Button{
+                background: #E60012 !important;
+                font-size: 13px;
+                font-weight: 400;
+                text-transform: capitalize;
+                letter-spacing: 0.4px;
+                height: 45px;
+                margin: 0px 12rem;
+                margin-top: 0rem;
+                margin-bottom: 8rem;
+                border-radius: 5px;
+            }
+
+        }
+    }
+    
+}

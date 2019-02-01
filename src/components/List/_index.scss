@@ -1,0 +1,90 @@
+@import '../../config/theme';
+
+
+.rootCl {
+    height: auto !important;
+    width: auto !important;
+    padding: 0 $con-pad;
+    padding-top: 40px;
+    display: block;
+
+    .list {
+        overflow-x: scroll;
+
+        div.ReactVirtualized__Table {
+            &__headerRow{
+                width: 100%;
+            }
+            &__Grid{
+                width: 100% !important;
+
+            }
+            &__row{
+                width:100% !important;
+            }
+            div.ReactVirtualized__Grid{
+                &__innerScrollContainer{
+
+                }
+
+            }
+            div.ReactVirtualized__Table__headerRow {
+                border-bottom: 1px solid #687587;
+                padding-bottom: 5px;
+                width: 100%;
+                div.ReactVirtualized__Table__headerColumn{
+
+                    .ReactVirtualized__Table__headerTruncatedText {
+                        
+                        font-weight: 500;
+                        font-size: 14px;
+                        letter-spacing: 0.05em;
+                        line-height: 14px;
+                        text-align: left;
+                        color: #687587;
+
+                    }
+                    
+                }
+                div.ReactVirtualized__Table__headerColumn:nth-child(1) { 
+                    // flex: 0 1 5rem !important;
+                }
+            }
+
+            div.ReactVirtualized__Grid.ReactVirtualized__Table__Grid {
+                padding-top: 0;
+                div.ReactVirtualized__Grid__innerScrollContainer{
+                    div.ReactVirtualized__Table__row{
+                        border-bottom: 1px solid #DEDEDE;
+                        position: relative !important;
+                        height: fit-content;
+                        top:0px !important;
+                        padding: 22px 0 !important;
+                        cursor: pointer;
+                        transition: 0.5s all ease-in-out;
+                        &:hover{
+                            background:#eee;
+                        }
+                        div.ReactVirtualized__Table__rowColumn{
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            width: 518px;
+                            height: 17px;
+                            font-size: 14px;
+                            line-height: 20px;
+                            text-align: left;
+                            color: #131313;
+                        }
+                        
+                        .ReactVirtualized__Table__rowColumn:nth-child(1){
+                                // flex: 0 1 5rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+    

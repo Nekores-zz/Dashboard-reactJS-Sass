@@ -1,0 +1,61 @@
+@import '../../config/_theme';
+
+.input-search{
+    position: relative;
+    /* background: #fbfbfb; */
+    width: 100%;
+    /* display: block; */
+  
+  i{
+    position: absolute;
+    top: 2rem;
+    left: 1.8rem;
+    font-size: 2.5rem;
+    color: #687387;
+    // color: $color-input-search-placeholder;
+  }
+
+  input{
+    box-sizing: border-box;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    // background: $color-filter-input-bg;
+    // border: 1px solid $color-filter-input-bg;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    width: 100%; 
+    outline: none;
+    padding: 30px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #A9B3B9;
+    padding-left: 50px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: left;
+    bacground: white;
+
+    // border-radius: $general-border-radius;
+    // font-size: $input-font-size;
+    // font-weight: $input-font-weight;
+    // letter-spacing: $input-font-space;
+    // color: $color-input;
+
+    &::before{
+      // font-family: $font-icon; 
+      content: 'search';  
+    }
+    &::placeholder{
+      // color: $color-input-search-placeholder;
+    }
+
+    &:focus{
+      // background: $color-filter-input-bg-focus;
+      // border-color: $color-filter-input-border-focus;
+    }
+  }
+}
+
+
+// @import "@material/textfield/mdc-text-field";

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+$el-pad                     : 1.5rem;
+$el-rad                     : .5rem;
+$con-pad                    : 12rem;
+
+$font-base                  : 1.4rem;
+// $font-header                : 'Open Sans', sans-serif;
+$font-header                : 'Roboto', sans-serif;
+// $font-body                  : 'Open Sans', sans-serif;
+$font-body                  : 'Roboto', sans-serif;
+$font-icon                  : 'Material Icons';
+
+$z-nav                      : 100;
+
+$color-primary              : #E60012;
+$color-accent               : #FF8000;
+$color-light                : #FFFFFF;
+$color-grey                 : #687587;
+$color-dark                 : #000000;
+$color-bg-wrap              : #EFF1F2;
+$color-bg-header            : #FBFBFB;
+
+$weight-light               : 300;
+$weight-normal              : 400;
+$weight-semi                : 600;
+$weight-bold                : 700;
+
+// Heading
+$h1                         : $font-base * 3.5;
+$h2                         : $font-base * 2.5;
+$h3                         : $font-base * 2;
+$h4                         : $font-base * 1.5;
+
+// Navigation
+$nav-bg                     : $color-light;
+$nav-width                  : 9rem;
+$nav-color                  : $color-grey;
+$nav-color-active           : $color-primary;
+$nav-icon                   : $font-base * 1.5;
+$nav-font                   : $font-base * 1.2;
+$nav-pad-left               : $font-base * 2.5;
+$nav-shadow                 : 0 -1px 2px rgba($color-dark, .2);
+$nav-weight                 : $weight-semi;
+
+// Header
+$header-height              : 12rem;
+
+
+
+

@@ -1,0 +1,76 @@
+
+//import '@material/react-text-field/index.scss';
+// @import "@material/textfield/mdc-text-field";
+
+.__UserProfile__Grid {
+    &__Row:nth-child(1) {
+        &__Cell {
+            &__Header {
+            }
+        }
+    }
+    &__Row:nth-child(2){
+        padding: 5rem 12rem !important;
+        &__Cell {
+            &__List{
+                &__ListItem{
+                    &__ListItemText:nth-child(1){
+                        padding-right: 12rem;
+                    }
+                }
+                
+             }
+                    
+        }
+        
+    }
+    
+    &__Row{
+        &__Cell {
+            &__Row{
+                &__Cell{
+                    line-height: 50px;
+                    &__Title{
+                        color: #687587;
+                        text-transform: uppercase;
+                        // background: red;
+                    }
+                    &__SubTitle{
+                        color: #687587;
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        // background: red;
+                    }
+                    &__Para{
+                        color: #131313;
+                        // text-transform: lowercase;
+                        // background: red;
+                    }
+                }
+            }
+            &__List {
+                &__ListItem {
+                    &__ListItemText {
+                        padding-right: 12rem;
+                        display: inline-flex;
+                    }
+                    &__Title{
+                        text-transform: uppercase;
+                        color: #687587;
+                        font-size: 14px;
+                    }
+                    &__Text{
+                        font-size: 14px;
+                        color: #131313;
+
+                    }
+                }
+
+            }
+
+        }
+    }
+    
+}
+
+@import '@material/react-list/index.scss';

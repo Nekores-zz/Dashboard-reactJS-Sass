@@ -1,0 +1,101 @@
+@import '../../config/theme';
+
+.filter{
+  background: white;
+  padding: 20px 12rem;
+  background: #FBFBFB;
+  &__container{
+    display:flex;
+  
+    &__input{
+      flex-grow: 3;
+      display:flex;
+  
+      &__flex-grow-one{
+        flex-grow: 1;
+        margin-right: 10px;
+        select {
+          box-sizing: border-box;
+          height: 62px;
+          padding: 0;
+          margin: 0;
+          padding: 0.5rem 1rem 0.5rem 2.5rem;
+          width: 100%;
+          outline: none;
+          padding: 30px;
+          border-radius: 5px;
+          background: none;
+          border: 1px solid #A9B3B9;
+          /* padding: 40px; */
+          font-size: 14px;
+          line-height: 36px;
+          text-align: left;
+          background-color: white;
+          background: transparent;
+          cursor: pointer;
+        }
+      }
+      
+      &__flex-grow-two{
+        flex-grow: 2;
+        margin-right: 10px;
+        
+      }
+      
+      &__flex-grow-three{
+        flex-grow: 3;
+      }
+    }
+  
+    
+    &__prev-next{
+      flex-grow: 1.5;
+      position:relative;
+
+      &__mod{
+        position: absolute;
+        top: 6px;
+        left: 0;
+        right: 0;
+        text-align: right;
+        span{
+          padding-right: 5px;
+          font-weight:400;
+          font-size:14px;
+          color: #687587;
+        }
+        button {
+                border: 1px solid #A9B3B9;
+                background: transparent;
+                padding: 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.5s all ease-in-out;
+                margin-left: 8px;
+
+                &:hover {
+                    background: #eff1f2;
+                }
+
+                &:focus {
+                    background: #eff1f2;
+                    outline: none;
+                    box-shadow: none;
+                }
+                i{
+                    color: #687487;
+                    font-size: 14px
+                }
+            }
+          button.active{
+            background: #A9B3B9;
+            i{
+              color:white;
+            }
+          }
+      }
+    }
+  
+  }
+
+}

@@ -1,0 +1,93 @@
+// @import "../../../../config/_theme.scss";
+
+.ReactModalPortal{
+.ReactModal__Overlay{
+  background: rgba(2, 2, 2, 0.40) !important;
+  .ReactModal__Content {
+  }
+}
+}
+
+.confirmation-modal {
+  display: block;
+  width: calc(100vw - 6rem);
+  max-width: 50rem;
+  height: calc(100vh - 9rem);
+  max-height: 20rem;
+  border: none;
+
+  &__header {
+    // background: $color-light;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+
+    &__text {
+      // font-weight: $font-weight-semibold;
+      font-weight:500;
+      align-items: center;
+      height: 1.5rem;
+      padding: 1.5rem;
+      font-size: 1.4rem;
+      width: calc(100% - 6rem);
+    }
+
+    &__icon {
+      display: inline-block;
+      cursor: pointer;
+
+      i {
+        vertical-align: middle;
+        // color: $color-select-icon;
+      }
+    }
+  }
+
+  &__body {
+    display: block;
+    height: calc(100% - 13.5rem);
+    overflow-y: scroll;
+    padding: 1.5rem;
+    line-height: 20px;
+  }
+
+  &__footer {
+    &__twoButton{
+      text-align: center;
+      width: 50%;
+      display: inline-block;
+
+      &__close{
+        // color: $color-modal-confirm-close;
+        // font-weight: $font-weight-semibold;
+        cursor: pointer;
+        color: #687587 !important;
+      }
+
+      &__yes{
+        cursor: pointer;
+        color: #E60012 !important;
+        // color: $color-modal-confirm-yes;
+        // font-weight: $font-weight-semibold;
+      }
+    }
+    &__oneButton{
+      text-align: center;
+      width: 50%;
+      display: inline-block;
+      cursor: pointer;
+
+      &__close{
+        cursor: pointer;
+        // color: $color-modal-confirm-close;
+        // font-weight: $font-weight-semibold;
+      }
+
+    }
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    padding-top: 2rem;
+  }
+}

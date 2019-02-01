@@ -1,0 +1,14 @@
+$mdc-layout-grid-default-margin: (
+  desktop: 0,
+  tablet: 0,
+  phone: 0
+) !default;
+
+$mdc-layout-grid-default-gutter: (
+  desktop: 30px,
+  tablet: 30px,
+  phone: 30px
+) !default;
+
+@import '@material/react-layout-grid/index';
+@import "@material/layout-grid/mdc-layout-grid";

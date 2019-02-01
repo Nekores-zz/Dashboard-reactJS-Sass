@@ -1,0 +1,10 @@
+@import '../../config/theme';
+@import "@material/react-button/index";
+@import "@material/button/mixins";
+
+.button{
+  @include mdc-button-container-fill-color($color-primary);
+  @include mdc-button-ink-color($color-light);
+  @include mdc-button-shape-radius($el-rad);
+  @include mdc-states-base-color(lighten($color-primary, 50%));
+}

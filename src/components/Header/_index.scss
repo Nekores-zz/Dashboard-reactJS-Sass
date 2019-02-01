@@ -1,0 +1,95 @@
+@import '../../config/theme';
+@import "@material/react-button/index.scss";
+.header{
+  height: $header-height;
+  padding: 0 $con-pad;
+  background: $color-bg-header;
+
+  &__grid{
+    height: 100%;
+    border-bottom: 1px solid #eff1f2;
+
+    &__row{
+      height: 100%;
+
+      &__column{
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &__main__Title {
+          font-weight: 300;
+          font-size: 36px;
+          line-height: 36px;
+          text-align: left;
+          color: #687587;
+          position:relative;
+          button{
+            cursor: pointer;
+            position: absolute;
+            left: -65px;
+            top: -2px;
+            padding: 8px;
+            background: transparent;
+            border: none;
+            transition: 0.5s all ease-in-out;
+            border-radius: 50%;
+            i{
+              color: #687587;
+            }
+            &:hover{
+              background: #eff1f2;
+            }
+            &:focus{
+              box-shadow: 1px 1px 2px #e7e7e7;
+              outline:none;
+            }
+          }
+
+        }
+        &__ul{
+          position: absolute;
+          right: 0;
+          &__li{
+            display: inline;
+            margin: 0px 8px;
+            &__button{
+            // background: #E60012 !important;
+            
+            text-transform: capitalize;
+
+
+
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 0.4px;
+                height: 45px;
+              
+                border-radius: 5px;
+        }
+        &__buttonIcon{
+            text-transform: capitalize;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 0.4px;
+                height: 45px;
+              
+                border-radius: 5px;
+                i{
+                  margin: auto !important;
+                }
+        }
+          }
+        }
+      }
+    }
+  }
+}
+
+.__btn-bg-darkGrey {
+  background: #687587 !important;
+}
+.__btn-bg-red{
+  background: #E60012 !important;
+}
+

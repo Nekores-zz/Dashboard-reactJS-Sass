@@ -1,0 +1,49 @@
+@import '../../config/theme';
+@import './reset';
+@import './icons';
+@import './grid';
+// Base font-size for scalling
+html{
+  font-size: 62.5% !important;
+}
+body{
+  font-size: $font-base;
+  font-family: $font-body;
+}
+
+.wrapper{
+  // overflow: hidden;
+  // max-width: 100%;
+  position: relative;
+  min-height: 100vh;
+  background: $color-bg-wrap;
+
+  &__route{
+    // min-height: 100vh;
+
+    &__container{
+      position: relative;
+      width: calc(100% - #{$nav-width});
+      left: $nav-width;
+    }
+  }
+}
+
+h1, h2, h3, h4{
+  font-family: $font-header;
+  font-weight: $weight-light;
+}
+
+h1{
+  font-size: $h1;
+}
+h2{
+  font-size: $h2;
+}
+h3{
+  font-size: $h3;
+}
+h4{
+  font-size: $h4;
+}
+

@@ -1,0 +1,59 @@
+.__TopBarNav{
+    &__Ul{
+        background: #FBFBFB !important;
+        padding: 20px 12rem;
+        &__Li{
+            display: inline;
+            margin: 0px 5px;
+            button{
+                border: none;
+                cursor: pointer;
+                transition: 0.5s all ease-in-out;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 500;
+                
+                &:hover {
+                    color: #E60012;
+                }
+                
+                &:focus {
+                    // color: #E60012;
+                    border:none;
+                    outline: none;
+                    box-shadow:none;
+                }
+            }
+            button.active{
+                color: #E60012;
+            }
+        }
+        &__Li__Logo {
+            padding: 10px;
+            padding-right: 18rem;
+            position: relative;
+            img{
+                height: 40px ;
+                position: absolute;
+                top: -5px;
+                left: 0;
+
+            }
+        }
+
+        &__Li__Last {
+            float: right;
+
+            button {
+                background: #E60012 !important;
+                min-width: 35px !important;
+                height: 35px;
+                position: relative;
+                top: -6px;
+                border-radius: 50%;
+
+            }
+
+        }
+    }
+}

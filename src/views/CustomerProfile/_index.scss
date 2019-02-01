@@ -1,0 +1,188 @@
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import '@material/react-top-app-bar/index.scss';
+
+
+.mdc-top-app-bar {
+    position: relative !important;
+    top: 0 !important;
+}
+
+
+
+.__CustomerProfile__Header {
+    box-shadow: none !important;
+    color: #333 !important;
+    padding: 0rem 12rem !important;
+    background: #FBFBFB !important;
+    button{
+        padding: 20px 0px !important;
+        font-size: 12px;
+        color: #687587;
+        letter-spacing: 0.2px;
+    }
+}
+.__CustomerProfile__Header {
+    div:nth-Child(1){
+            border-bottom: 0.1px solid #eff1f2 !important;
+
+    }
+}
+
+.__CustomerProfile {
+    
+    
+    &__Grid {
+        &__Row__Overview {
+            padding: 2rem 12rem !important;
+        }
+
+        &__Row__Isuzu {
+            padding: 2rem 12rem !important;
+        }
+
+        &__RowHead {
+            padding: 0;
+
+            &__Cell {
+                &__Header {}
+    
+                .filter {
+                    margin: -24px !important;
+                }
+            }
+        }
+
+        &__Row {
+            &__Cell {
+                .filter {
+                    margin: -24px !important;
+                    
+                }
+                
+                &__BreadCrumb{
+                    background: #dcdcdc;
+                    margin-top: -30px;
+                    padding: 4rem 14rem;
+                    &__Heading2{
+                        line-height: 40px;
+                        font-size: 22px;
+                        font-weight: 600;
+
+                    }
+                    &__Para{
+                        font-size: 13px;
+                        color: #949eab;
+                    }
+                }
+                &__PageBody {
+                        padding: 4rem 14rem;
+                        background: #fbfbfb;
+                        margin-top: -30px;
+
+                    &__Heading3 {
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #939eab;
+                        margin-bottom: 28px;
+                        margin-top: 15px;
+
+                    }
+                }
+                &__Row {
+                    &__Cell {
+                        line-height: 50px;
+
+                        &__Title {
+                            color: #687587;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                        }
+
+                        &__SubTitle {
+                            color: #687587;
+                            text-transform: uppercase;
+                            font-size: 11px;
+                        }
+
+                        &__Para {
+                            color: #131313;
+                            font-size: 13px;
+                        }
+
+                        &__TextBox {
+                            color: #0C72E6;
+                            margin-bottom: 40px;
+                            border-top: 2px solid #0C72E6;
+
+                            h6 {
+                                font-size: 8px;
+                                line-height: 30px;
+                                text-transform: uppercase;
+                                letter-spacing: 0.5px;
+                            }
+
+                            h4 {
+                                font-size: 42px;
+                                line-height: 70px;
+                            }
+                        }
+
+                        &__TextBox__Blue {
+                            color: #0C72E6;
+                            margin-bottom: 40px;
+                            border-top: 2px solid #0C72E6;
+                        }
+
+                        &__TextBox__Red {
+                            border-color: #E60012;
+                            color: #E60012;
+                        }
+
+                        &__TextBox__Green {
+                            color: #6FB406;
+                            margin-bottom: 40px;
+                            border-top: 2px solid #6FB406;
+                        }
+
+                        &__TextBox__Orange {
+                            color: #FF8000;
+                            margin-bottom: 40px;
+                            border-top: 2px solid #FF8000;
+                        }
+
+                        &__TextBox__DarkGrey {
+                            color: #687587;
+                            margin-bottom: 40px;
+                            border-top: 2px solid #687587;
+                        }
+                    }
+                }
+
+                &__List {
+                    &__ListItem {
+                        &__ListItemText {
+                            padding-right: 12rem;
+                            display: inline-flex;
+                        }
+
+                        &__Title {
+                            text-transform: uppercase;
+                            color: #687587;
+                            font-size: 14px;
+                        }
+
+                        &__Text {
+                            font-size: 14px;
+                            color: #131313;
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+

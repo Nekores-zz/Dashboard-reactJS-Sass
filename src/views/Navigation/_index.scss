@@ -1,0 +1,91 @@
+@import '../../config/theme';
+
+.navigation{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: $z-nav;
+  width: $nav-width;
+  display: flex;
+  background: $nav-bg;
+  flex-direction: column;
+  box-shadow: $nav-shadow;
+  transition: width .15s;
+
+  &__logo, &__primary, &__secondary{
+    display: flex;
+    flex-direction: column;
+
+    button{
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+      box-sizing: unset;
+      outline: none;
+    }
+  }
+
+  &__logo{
+    height: $header-height;
+  }
+
+  &__primary{
+  }
+
+  &__secondary{
+    height: 12rem;
+    margin-top: auto;
+  }
+
+  .navigation-item{
+    width: calc(100% - #{$nav-pad-left});
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    font-size: $nav-font;
+    color: $nav-color;
+    padding-left: $nav-pad-left;
+
+    i{
+      font-size: $nav-icon;
+    }
+
+    span{
+      display: none;
+      font-size: $nav-font;
+      font-weight: $nav-weight;
+      margin-left: $el-pad;
+      white-space: nowrap; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &:hover{
+      background: rgba($nav-color, .05);
+    }
+
+    &--active{
+      background: rgba($nav-color-active, .05);
+      color: $nav-color-active;
+
+      &:hover{
+        background: rgba($nav-color-active, .05);
+      }
+    }
+  }
+
+  &:hover{
+    width: 24rem;
+
+    .navigation-item{
+      span{
+        display: block;
+      }
+    }
+  }
+}

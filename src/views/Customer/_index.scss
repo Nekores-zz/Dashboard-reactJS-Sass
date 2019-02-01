@@ -1,0 +1,32 @@
+@import '../../config/theme';
+.customer{
+    // height: 100vh;
+    background: #EFF1F2;
+    div.header{
+
+    }
+    .__inputContainer {
+            padding-top: 20px;
+            background: #fbfbfb;
+        &__Ul{
+            position: relative;
+            background: #fbfbfb;
+            padding: 0 $con-pad;
+            padding-bottom: 20px;
+            li:nth-child(1) {
+                width: 50%;
+            }
+            li:nth-child(3) {
+                width: 20% !important;
+                float: right;
+                }
+            }
+            li{
+                display: inline-block !important;
+                width: 15%;
+                margin-right: 15px;
+            }
+        }
+    }
+    
+    
